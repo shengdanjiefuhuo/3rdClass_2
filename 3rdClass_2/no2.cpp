@@ -7,7 +7,7 @@ int main()
     cap.open(0);
 	if (!cap.isOpened())
 	{
-		std::cout << "²»ÄÜ´ò¿ªÊÓÆµ"<<std::endl;
+		std::cout << "ä¸èƒ½æ‰“å¼€è§†é¢‘"<<std::endl;
 		return-1;
 	}
 
@@ -19,14 +19,14 @@ int main()
 		bool rSucess = cap.read(frame);
 		if (!rSucess)
 		{
-			std::cout << "²»ÄÜ´ÓÊÓÆµÎÄ¼şÖĞ¶ÁÈ¡Ö¡" << std::endl;
+			std::cout << "ä¸èƒ½ä»è§†é¢‘æ–‡ä»¶ä¸­è¯»å–å¸§" << std::endl;
 			break;
 		}
 		else
 		{
 			cv::imshow("frame", frame);
 		}
-		waitKey(0);
+		waitKey(30);
 	}
 
   
